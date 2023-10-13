@@ -64,8 +64,45 @@
 
             <section>
                 <h2>Cat Form</h2>
+
+                <form action="pages/catgallery.html">
+
+                    <fieldset>
+                        <legend>Is your cat an indoor or outdoor cat?</legend>
+
+                        <input type="radio" id="indoor" name="outdoor_indoor" value="indoor">
+                        <label for="indoor">Indoor</label>
+                        <input type="radio" id="outdoor" name="outdoor_indoor" value="outdoor">
+                        <label for="outdoor">Outdoor</label>
+
+                    </fieldset>
+
+                    <fieldset>
+                            <legend>What's your cat's personality?</legend>
+
+                            <label><input type="checkbox" id="loving" name="personality" value="Loving"> Loving</label>
+                            <label><input type="checkbox" id="Lazy" name="personality" value="Lazy"> Lazy</label>
+                            <label><input type="checkbox" id="Energetic" name="personality" value="Energetic"> Energetic</label>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Choose Your Cat's Color</legend>
+
+                        <input type="color" id="catcolor" value="#FFA500" name="color">
+                        <label for="catcolor">Body</label>
+                    </fieldset>
+
+                    <input type="url" name="catphotourl" placeholder="cat photos URL" required/>
+                    <button type="submit">Submit</input>
+                    
+                </form>
+
             </section>
+
         </main>
+        <footer>
+            <p>No Copyright - <a href="freeCodeCamp.org">freeCodeCamp.org</a></p>
+        </footer>
     </body>
 
 </html>
